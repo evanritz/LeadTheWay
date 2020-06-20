@@ -1,0 +1,3 @@
+- tor hidden service running / tor proxy up on 9050
+- privoxy service running forwarding socks5 to http on 8118
+ 

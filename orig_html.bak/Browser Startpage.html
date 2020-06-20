@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="de"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lead The Way Dashboard</title><meta name="description" content=""><meta name="keywords" content=""><meta name="language" content="de">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<link rel="preload" href="https://demo.saschadiercks.de/startpage/assets/wallpaper/default.svg" as="image">
+
+<style>
+		html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}html{font-size:100%;height:100%;overflow-y:auto;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0;padding:0}img{height:auto;max-width:100%}header,main,footer{display:block}button{background-color:rgba(0,0,0,0);border-width:0;cursor:pointer;font-size:inherit}header{width:100%;z-index:2}a{color:inherit}main{left:0;right:0;margin:1vw;position:relative;z-index:1}footer:after{content:"";display:table;clear:both}nav ul{list-style-type:none;margin-top:0;margin-bottom:0;padding-left:0}nav ul:after{content:"";display:table;clear:both}nav a{display:block;text-decoration:none}.list-tiles{list-style-type:none;margin-top:0;margin-bottom:0;padding-left:0;margin-left:auto;margin-right:auto}.list-vertical{list-style-type:none;margin-top:0;margin-bottom:0;padding-left:0;padding-bottom:.75vw}.list-vertical__link{display:block;text-decoration:none}.list-vertical__link:hover{text-decoration:underline}.list-horizontal{list-style-type:none;margin-top:0;margin-bottom:0;padding-left:0}.list-horizontal li{display:inline-block}.js .tabbed-content:not(.active){display:none}.backdrop{background-color:rgba(8,34,63,0.6);height:100vh;position:absolute;-webkit-transition:opacity 0s ease;transition:opacity 0s ease;top:0;width:100vw;z-index:-1}.collapse{display:block}.collapse.js-closed .collapse-icon{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.collapse.js-closed .collapse-main{max-height:0}.collapse-title{font-size:inherit;font-weight:600;margin:0;padding-top:inherit}.collapse-title .js-collapse-toggle{cursor:pointer;display:block;outline:none;padding-left:0;text-align:left;width:100%}.collapse-icon{display:inline-block;float:right;position:relative;top:-2px;-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;transition:transform .2s ease;transition:transform .2s ease, -webkit-transform .2s ease}.collapse-main{max-height:100vh;overflow:hidden;-webkit-transition:max-height .5s ease;transition:max-height .5s ease}.modal{display:block;position:fixed;top:0;z-index:2}.modal-overlay{-webkit-transform:translate(-50%, -50%) scale(0);transform:translate(-50%, -50%) scale(0);position:fixed;left:50%;top:50%}.modal-header{font-weight:600;position:relative}.modal-content{overflow-y:auto}.modal-header__close{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);right:0}.modal-list{list-style-type:none;margin-top:0;margin-bottom:0;padding-left:0}.modal-list__item{display:inline-block;width:49%}@supports ((display: -ms-grid) or (display: grid)){.modal-list{display:-ms-grid;display:grid;-ms-grid-columns:50% auto;grid-template-columns:50% auto}.modal-list__item{width:100%}}.modal-list__link{display:block;padding:9px;text-decoration:none}.modal-list__link:hover{background-color:#f5f5f5}.modal-content--qr{text-align:center}.modal-content--qr img{mix-blend-mode:multiply}.notification{-webkit-transition:all .2s;transition:all .2s}.notification.js-hidden{-webkit-transform:translateX(100%);transform:translateX(100%)}.notification.js-visible{right:1vw;-webkit-transform:translateX(0%);transform:translateX(0%)}.overlay{display:block;position:fixed;z-index:2}.overlay.js-hidden{height:0}.overlay-close{float:right}.overlay-title{font-size:1rem;font-weight:600;margin-top:0;padding-top:inherit}.overlay-content{height:100vh;overflow-y:auto;-webkit-transition:all .2s ease;transition:all .2s ease;width:100%}.tile{display:block;position:relative}.tile-image{display:inline-block;max-height:100%;max-width:100%;object-fit:contain}.tile-title{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}#wallpaper{bottom:0;left:0;position:fixed;right:0;top:0}.js-fixed{position:fixed}.js-sticky{position:fixed}#notification{display:block !important}.overlay{display:block !important}body{background-color:#fdfdfd;font-family:-apple-system,sans-serif}#wallpaper{background-size:cover;background-position:center center;-webkit-filter:blur(0.1px);filter:blur(0.1px)}.collapse{border-top:1px solid #ddd}.modal-overlay{-webkit-transform:translate(-50%, -50%) scale(0);transform:translate(-50%, -50%) scale(0);position:fixed;left:50%;top:50%;background-color:#fdfdfd;border-radius:4px;color:#333;box-shadow:0 2px 4px rgba(0,0,0,0.2);max-height:400px;height:auto;max-width:500px;width:90%;-webkit-transition:-webkit-transform .2s ease-in-out;transition:-webkit-transform .2s ease-in-out;transition:transform .2s ease-in-out;transition:transform .2s ease-in-out, -webkit-transform .2s ease-in-out}.js-visible .modal-overlay{-webkit-transform:translate(-50%, -50%) scale(1);transform:translate(-50%, -50%) scale(1);position:fixed;left:50%;top:50%}.modal-header{background-color:rgba(0,0,0,0);border-bottom:2px solid #007acc;color:#333;padding:18px;margin-bottom:9px}.modal-content{padding:9px}.overlay{height:100vh;width:100%}.overlay-content{background-color:#fdfdfd;box-shadow:0 2px 4px rgba(0,0,0,0.2);color:#333}.js-hidden .backdrop{height:0;opacity:0}.js-hidden .overlay-content{-webkit-transform:translateX(100%);transform:translateX(100%)}.js-visible .backdrop{opacity:1}.js-visible .overlay-content{-webkit-transform:translateX(0);transform:translateX(0)}header{background-color:#fdfdfd;box-shadow:0 1px 1px rgba(0,0,0,0.2)}header.js-sticky{top:0}header .collapse{border-width:0}nav li{display:inline-block}nav a{color:#333}nav a:hover,nav a.active{background-color:#007acc;border-radius:2px;color:#fff}.list-tiles{-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.tile-container{padding:.5vw;width:25%}@supports ((display: -ms-grid) or (display: grid)){.list-tiles{display:-ms-grid;display:grid;grid-gap:1vw;-ms-grid-columns:(minmax(256px, 1fr))[auto-fit];grid-template-columns:repeat(auto-fit, minmax(256px, 1fr))}.tile-container{padding:0;width:auto}}.tile-container{display:-webkit-box;display:-ms-flexbox;display:flex;height:156px;position:relative}.tile{background-image:-webkit-linear-gradient(top, rgba(253,253,253,0.9), rgba(245,245,245,0.97));background-image:linear-gradient(to bottom, rgba(253,253,253,0.9), rgba(245,245,245,0.97));background-clip:padding-box;border:1px solid #f5f5f5;box-shadow:0 1px 1px rgba(0,0,0,0.2);border-radius:2px;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:.75rem;position:relative;text-align:center;text-decoration:none;width:100%}.tile:hover{border-color:#ddd;background-image:-webkit-linear-gradient(bottom, rgba(253,253,253,0.9), rgba(245,245,245,0.97));background-image:linear-gradient(to top, rgba(253,253,253,0.9), rgba(245,245,245,0.97));z-index:2}.tile-title{background-color:rgba(245,245,245,0.3);bottom:0;color:#333;left:0;display:block;padding:.5vw;position:absolute;right:0}.tile__button{color:inherit;left:1px;padding:.5vw;position:absolute;top:1px;z-index:2}.tile-image{margin:auto}#bookmarks .overlay-content{max-width:400px;position:fixed;top:0;right:0}#bookmarks ul{list-style-type:none;margin-top:0;margin-bottom:0;padding-left:0}#bookmarks a{font-size:.875rem;padding:2px 0}.notification{background-color:#fdfdfd;box-shadow:0 2px 4px rgba(0,0,0,0.2);color:#333;padding:1vw;right:0;position:fixed;bottom:3vw;z-index:99}footer{background-color:#007acc;color:#fff;font-size:.75rem;padding-left:1vw;padding-right:1vw;width:100%;z-index:2}footer.js-sticky{bottom:0}footer a{color:inherit;display:inline-block;padding-top:9px;padding-bottom:9px}footer .description{float:left}footer .social-profiles{float:right}.js-fx header,.js-fx main,.js-fx footer,.js-fx #wallpaper{-webkit-filter:blur(1px);filter:blur(1px)}@media (max-width: 670px){button{padding:1vw 2vw}header,.overlay-content{padding:2vw 1.5vw}header a{padding:1vw 2vw}.overlay-title{padding-top:1vw;padding-bottom:1vw}header{display:-ms-grid;display:grid;-ms-grid-columns:(1fr)[2];grid-template-columns:repeat(2, 1fr)}#bookmarks-toggle{justify-self:end}#header-nav-toggle{justify-self:start}#header-nav{-ms-grid-column:1;grid-column-start:1;-ms-grid-column-span:2;grid-column-end:span 2;max-height:0;overflow:hidden;-webkit-transition:max-height .5s ease;transition:max-height .5s ease}#header-nav.js-opened{max-height:100vh}#header-nav li{display:block}}@media (min-width: 671px){button{padding:.75vw 1vw}header,.overlay-content{padding:.75vw 1vw}header a{padding:.75vw 1vw}header .collapse-main{overflow:visible}#bookmarks-toggle{float:right}.overlay-title,.collapse a{padding-top:.75vw;padding-bottom:.75vw}.tile-title{opacity:0;-webkit-transition:opacity .2s;transition:opacity .2s}.tile:hover .tile-title{opacity:1}button[data-target*="nav"]{display:none}}body:not(.js) main nav:not(:last-child){margin-bottom:2vw;padding-bottom:2vw;border-bottom:1px dotted #f5f5f5}
+	</style>
+
+<link rel="apple-touch-icon" href="https://demo.saschadiercks.de/startpage/apple-touch-icon-foto-228x228-precomposed.png" sizes="228x228">
+<link rel="shortcut icon" href="https://demo.saschadiercks.de/startpage/favicon.ico">
+</head>
+<body class="js">
+
+<header id="application-header" class="js-sticky">
+<button id="header-nav-toggle" class="js-collapse-toggle" data-target="header-nav">☰</button>
+<button id="bookmarks-toggle" class="js-overlay-toggle" data-target="bookmarks">🔖</button>
+<nav id="header-nav" class="collapse tabs">
+<ul class="collapse-main tablist">
+<li class="tablist__item">
+<a href="#tab-1" class="js-tab-trigger active" data-target="tab-1">Dashboard</a>
+</li>
+<li class="tablist__item">
+<a href="#tab-2" class="js-tab-trigger" data-target="tab-2">Admin</a>
+</li>
+<li class="tablist__item">
+<a href="#tab-3" class="js-tab-trigger" data-target="tab-3">List</a>
+</li>
+<li class="tablist__item tablist__item--last-child">
+<a href="#tab-4" class="js-tab-trigger" data-target="tab-4">Options</a>
+</li>
+
+
+
+</ul>
+</nav>
+</header>
+
+<main id="content" style="padding-top: 64px; padding-bottom: 33px;">
+<div id="tab-5" class="tabbed-content active">
+<ul class="list-tiles">
+<li class="tile-container">
+<a href="https://github.com/saschadiercks/browserStartpage" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/forkme.png" alt="Fork me on github" class="tile-image">
+<span class="tile-title">Fork me on github</span>
+</a>
+<button class="tile__button js-modal-toggle" data-target="assets/qr-codes/github-project.png">▣</button> </li>
+<li class="tile-container">
+<a href="https://github.com/saschadiercks/browserStartpage" rel="noopener" class="tile js-modal-toggle" data-target="linksasmodal">
+<img src="Browser%20Startpage_files/modal.png" alt="Links as modal" class="tile-image">
+<span class="tile-title">Links as modal</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://www.google.de/chrome/browser/desktop/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/chrome.png" alt="Chrome" class="tile-image">
+<span class="tile-title">Chrome</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://www.mozilla.org/firefox" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/firefox.png" alt="Firefox" class="tile-image">
+<span class="tile-title">Firefox</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://www.mozilla.org/de/firefox/developer/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/firefox-dev.png" alt="Firefox (Dev)" class="tile-image">
+<span class="tile-title">Firefox (Dev)</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://developer.apple.com/safari/technology-preview/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/safari-tp.png" alt="Safari (TP)" class="tile-image">
+<span class="tile-title">Safari (TP)</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://vivaldi.com/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/vivaldi.png" alt="Vivaldi" class="tile-image">
+<span class="tile-title">Vivaldi</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://blisk.io/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/blisk.png" alt="Blisk" class="tile-image">
+<span class="tile-title">Blisk</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/modern-ie.png" alt="Modern IE" class="tile-image">
+<span class="tile-title">Modern IE</span>
+</a>
+</li>
+</ul>
+</div>
+<div id="tab-6" class="tabbed-content">
+<ul class="list-tiles">
+<li class="tile-container">
+<a href="https://schema.org/docs/schemas.html" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/schema.png" alt="Schema.org" class="tile-image">
+<span class="tile-title">Schema.org</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://html.spec.whatwg.org/multipage/forms.html#autofill" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/autocomplete.png" alt="Autocomplete" class="tile-image">
+<span class="tile-title">Autocomplete</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="http://microformats.org/wiki/hcard-input-formats" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/microformats.png" alt="Microformats" class="tile-image">
+<span class="tile-title">Microformats</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://github.com/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/github.png" alt="Github" class="tile-image">
+<span class="tile-title">Github</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://bitbucket.org/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/bitbucket.png" alt="Bitbucket" class="tile-image">
+<span class="tile-title">Bitbucket</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://validator.w3.org/nu/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/html-validator.png" alt="HTML-Validator" class="tile-image">
+<span class="tile-title">HTML-Validator</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://developers.google.com/structured-data/testing-tool/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/rich-snippet.png" alt="RichSnippet-Testing" class="tile-image">
+<span class="tile-title">RichSnippet-Testing</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://developers.google.com/speed/pagespeed/insights/?hl=de" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/pagespeed.png" alt="Google Pagespeeds" class="tile-image">
+<span class="tile-title">Google Pagespeeds</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://search.google.com/test/mobile-friendly" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/mobile-friendly.png" alt="Google Mobiltest" class="tile-image">
+<span class="tile-title">Google Mobiltest</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://www.google.com/webmasters/tools/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/webmastertools.png" alt="Google Webmaster-Tools" class="tile-image">
+<span class="tile-title">Google Webmaster-Tools</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://analytics.google.com/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/analytics.png" alt="Analytics" class="tile-image">
+<span class="tile-title">Analytics</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://github.com/dypsilon/frontend-dev-bookmarks" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/frontend-bookmarks.png" alt="Frontend Bookmarks" class="tile-image">
+<span class="tile-title">Frontend Bookmarks</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://developer.mozilla.org/de/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/mozilla-dev.png" alt="Mozilla (dev)" class="tile-image">
+<span class="tile-title">Mozilla (dev)</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://developers.google.com/web/?hl=de" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/google-dev.png" alt="Google (dev)" class="tile-image">
+<span class="tile-title">Google (dev)</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://codepen.io/patterns/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/codepen-patterns.png" alt="Codepen patterns" class="tile-image">
+<span class="tile-title">Codepen patterns</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="http://browserl.ist/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/browserlist.png" alt="Browserlist" class="tile-image">
+<span class="tile-title">Browserlist</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://www.codecademy.com/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/codecademy.png" alt="Codecademy" class="tile-image">
+<span class="tile-title">Codecademy</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://tools.pingdom.com/fpt/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/pingdom.png" alt="Pingdom" class="tile-image">
+<span class="tile-title">Pingdom</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://dequeuniversity.com/library/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/accessibility.png" alt="Accessibility Library" class="tile-image">
+<span class="tile-title">Accessibility Library</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://pixabay.com/de/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/pixabay.png" alt="Pixabay" class="tile-image">
+<span class="tile-title">Pixabay</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://npms.io/search?term=hyperterm" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/npms-io.png" alt="npms.io" class="tile-image">
+<span class="tile-title">npms.io</span>
+</a>
+</li>
+</ul>
+</div>
+<div id="tab-7" class="tabbed-content">
+<ul class="list-tiles">
+<li class="tile-container">
+ <a href="https://www.microsoft.com/en-us/design" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/design-microsoft.png" alt="Microsoft Design" class="tile-image">
+<span class="tile-title">Microsoft Design</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://design.google/resources/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/design-google.png" alt="Google Design" class="tile-image">
+<span class="tile-title">Google Design</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://material.io/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/design-material.png" alt="Material Design" class="tile-image">
+<span class="tile-title">Material Design</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://design.firefox.com/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/design-firefox.png" alt="Firefox Design" class="tile-image">
+<span class="tile-title">Firefox Design</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="http://facebook.design/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/design-facebook.png" alt="Facebook Design" class="tile-image">
+<span class="tile-title">Facebook Design</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://design.trello.com/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/trello.png" alt="Trello Design" class="tile-image">
+<span class="tile-title">Trello Design</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://github.com/showcases/design-essentials" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/github.png" alt="Github Design Essentials" class="tile-image">
+<span class="tile-title">Github Design Essentials</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://www.uber.design/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/design-uber.png" alt="Uber design" class="tile-image">
+<span class="tile-title">Uber design</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://airbnb.design/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/design-airbnb.png" alt="airbnb Design" class="tile-image">
+<span class="tile-title">airbnb Design</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://atlassian.design/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/design-atlassian.png" alt="Atlassian Design" class="tile-image">
+<span class="tile-title">Atlassian Design</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://unsplash.com/search/photos/macbook" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/design-unsplash.png" alt="Unsplash" class="tile-image">
+<span class="tile-title">Unsplash</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="http://magicmockups.com/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/magic-mockups.png" alt="Magic Mockups" class="tile-image">
+<span class="tile-title">Magic Mockups</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="http://smartmockups.com/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/smartmockups.png" alt="Smart Mockups" class="tile-image">
+<span class="tile-title">Smart Mockups</span>
+</a>
+</li>
+<li class="tile-container">
+<a href="https://www.designbetter.co/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/design-invision.png" alt="Design better" class="tile-image">
+<span class="tile-title">Design better</span>
+</a>
+</li>
+</ul>
+</div>
+<div id="tab-8" class="tabbed-content">
+<ul class="list-tiles">
+<li class="tile-container">
+<a href="https://www.saschadiercks.de/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/sdi-homepage.png" alt="About me" class="tile-image">
+<span class="tile-title">About me</span>
+</a>
+<button class="tile__button js-modal-toggle" data-target="assets/qr-codes/metafolio-de.png">▣</button> </li>
+<li class="tile-container">
+<a href="https://www.metaideen.de/" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/sdi-blog.png" alt="Blog (german)" class="tile-image">
+<span class="tile-title">Blog (german)</span>
+</a>
+<button class="tile__button js-modal-toggle" data-target="assets/qr-codes/metaideen-de.png">▣</button> </li>
+<li class="tile-container">
+<a href="https://www.saschadiercks.de/side-projects/personalnews" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/sdi-personalnews.png" alt="personalNews" class="tile-image">
+<span class="tile-title">personalNews</span>
+</a>
+<button class="tile__button js-modal-toggle" data-target="assets/qr-codes/personalnews-landing.png">▣</button> </li>
+<li class="tile-container">
+<a href="https://www.saschadiercks.de/side-projects/startpage" target="_self" rel="noopener" class="tile">
+<img src="Browser%20Startpage_files/sdi-startpage.png" alt="Browser Startpage (this)" class="tile-image">
+<span class="tile-title">Browser Startpage (this)</span>
+</a>
+<button class="tile__button js-modal-toggle" data-target="assets/qr-codes/startpage-demo.png">▣</button> </li>
+</ul>
+</div>
+</main>
+
+<div id="bookmarks" class="overlay js-hidden">
+<div class="overlay-content">
+<button class="js-overlay-toggle overlay-close" data-target="bookmarks">×</button>
+<h2 class="overlay-title">Bookmarks</h2>
+<div class="collapse js-closed" id="collapse-frontend">
+<div class="collapse-header">
+<h3 class="collapse-title"><button class="js-collapse-toggle" data-target="collapse-frontend"><span class="collapse-icon">×</span> Frontend</button></h3>
+</div>
+<div class="collapse-main">
+<ul class="list-vertical">
+<li class="list-vertical__item">
+<a href="https://github.com/dypsilon/frontend-dev-bookmarks" target="_self" class="list-vertical__link">Frontend Dev Bookmarks</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://github.com/thedaviddias/Front-End-Checklist" target="_self" class="list-vertical__link">Frontend Checklist</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://github.com/bendc/frontend-guidelines" target="_self" class="list-vertical__link">Frontend Guidelines</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://codeguide.co/" target="_self" class="list-vertical__link">Codeguide by @mdo</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://cssreference.io/" target="_self" class="list-vertical__link">CSS Reference</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://cssguidelin.es/" target="_self" class="list-vertical__link">CSS Guidelines</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://bundlephobia.com/" target="_self" class="list-vertical__link">Bundlephobia</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://ausi.github.io/respimagelint/" target="_self" class="list-vertical__link">ImageLint for responsive Images</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://uitest.com/de/" target="_self" class="list-vertical__link">UI-Test</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://whatdoesmysitecost.com/" target="_self" class="list-vertical__link">What does my site cost</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://www.campaignmonitor.com/css/" target="_self" class="list-vertical__link">CSS in eMails</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://webfieldmanual.com/" target="_self" class="list-vertical__link">Webfield manual</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://docs.google.com/spreadsheets/d/1tZYPnzLG0y51QinLxrV97Xflzr2MbTqwWNvaHYN04BE/edit#gid=0" target="_self" class="list-vertical__link">Styleguide/Boilerplate patterns</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://www.filamentgroup.com/lab/font-events.html" target="_self" class="list-vertical__link">Font Loading via API</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://developer.apple.com/" target="_self" class="list-vertical__link">Developer @Apple</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://www.interaction-design.org/" target="_self" class="list-vertical__link">Interaction Design</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://www.barrierefreies-webdesign.de/knowhow/" target="_self" class="list-vertical__link">Barrierefreies Webdesign</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://webkrauts.de/" target="_self" class="list-vertical__link">Webkrauts</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://a11yproject.com/" target="_self" class="list-vertical__link">A11Y</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://www.w3.org/WAI/beta/" target="_self" class="list-vertical__link">WAI</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="collapse js-closed" id="collapse-frameworks">
+<div class="collapse-header">
+<h3 class="collapse-title"><button class="js-collapse-toggle" data-target="collapse-frameworks"><span class="collapse-icon">×</span> Frameworks</button></h3>
+</div>
+<div class="collapse-main">
+<ul class="list-vertical">
+<li class="list-vertical__item">
+<a href="https://bulma.io/" target="_self" class="list-vertical__link">Bulma</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://getbootstrap.com/" target="_self" class="list-vertical__link">Bootstrap</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://foundation.zurb.com/" target="_self" class="list-vertical__link">Foundation</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://jquery.com/" target="_self" class="list-vertical__link">jQuery</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="collapse js-closed" id="collapse-designsystems">
+<div class="collapse-header">
+<h3 class="collapse-title"><button class="js-collapse-toggle" data-target="collapse-designsystems"><span class="collapse-icon">×</span> Design Systems</button></h3>
+</div>
+<div class="collapse-main">
+<ul class="list-vertical">
+<li class="list-vertical__item">
+<a href="https://www.designsystems.com/" target="_self" class="list-vertical__link">Design Systems (by figma)</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://designsystemsrepo.com/" target="_self" class="list-vertical__link">Design Systems Repo</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://www.lightningdesignsystem.com/" target="_self" class="list-vertical__link">Lightning Design System</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://ux.mailchimp.com/patterns" target="_self" class="list-vertical__link">Mailchimp UX</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://www.otto.de/pattern-library/" target="_self" class="list-vertical__link">Otto Pattern Library</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://patternlab.io/" target="_self" class="list-vertical__link">Patternlab</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="collapse js-closed" id="collapse-patterns">
+<div class="collapse-header">
+<h3 class="collapse-title"><button class="js-collapse-toggle" data-target="collapse-patterns"><span class="collapse-icon">×</span> Patterns</button></h3>
+</div>
+<div class="collapse-main">
+<ul class="list-vertical">
+<li class="list-vertical__item">
+<a href="https://codepen.io/patterns/" target="_self" class="list-vertical__link">Patterns @codepen</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://inclusive-components.design/" target="_self" class="list-vertical__link">Inclusive components</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://patterntap.com/patterntap" target="_self" class="list-vertical__link">Patterns by Zurb</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://ui-patterns.com/" target="_self" class="list-vertical__link">UI-Patterns</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://www.goodui.org/" target="_self" class="list-vertical__link">Good UI</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://ui-patterns.com/blog/How-to-get-better-at-UI-design" target="_self" class="list-vertical__link">Get better at UI</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="collapse js-closed" id="collapse-styleguides">
+<div class="collapse-header">
+<h3 class="collapse-title"><button class="js-collapse-toggle" data-target="collapse-styleguides"><span class="collapse-icon">×</span> Styleguides</button></h3>
+</div>
+<div class="collapse-main">
+<ul class="list-vertical">
+<li class="list-vertical__item">
+<a href="https://www.designtagebuch.de/wiki/corporate-design-manuals/" target="_self" class="list-vertical__link">Corporate Design manuals</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://www.designtagebuch.de/wiki/" target="_self" class="list-vertical__link">Designtagebuch Wiki</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://saijogeorge.com/brand-style-guide-examples/" target="_self" class="list-vertical__link">Styleguide Examples</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://www.theuxbookmark.com/2010/08/interaction-design/a-monster-list-of-ui-guidelines-style-guides" target="_self" class="list-vertical__link">UX-Bookmark: Styleguides</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="collapse js-closed" id="collapse-design">
+<div class="collapse-header">
+<h3 class="collapse-title"><button class="js-collapse-toggle" data-target="collapse-design"><span class="collapse-icon">×</span> Design</button></h3>
+</div>
+<div class="collapse-main">
+<ul class="list-vertical">
+<li class="list-vertical__item">
+<a href="http://makersandfounders.com/DIETER-RAMS" target="_self" class="list-vertical__link">Dieter Rams</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://www.customspaces.com/" target="_self" class="list-vertical__link">Custom spaces</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://startupsthisishowdesignworks.com/" target="_self" class="list-vertical__link">this is how design works</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="collapse js-closed" id="collapse-helpers">
+<div class="collapse-header">
+<h3 class="collapse-title"><button class="js-collapse-toggle" data-target="collapse-helpers"><span class="collapse-icon">×</span> Helpers</button></h3>
+</div>
+<div class="collapse-main">
+<ul class="list-vertical">
+<li class="list-vertical__item">
+<a href="http://scrumguides.org/" target="_self" class="list-vertical__link">Scrum Guides</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://support.apple.com/de-de/HT205655" target="_self" class="list-vertical__link">Ergonomie @Apple</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://makerbook.net/" target="_self" class="list-vertical__link">Makerbook</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://www.paypalobjects.com/en_AU/vhelp/paypalmanager_help/credit_card_numbers.htm" target="_self" class="list-vertical__link">Test Creditcard Numbers</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://sizecalc.com/" target="_self" class="list-vertical__link">Size Calculator</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://www.flickr.com/photos/jasontravis/sets/72157603258446753/" target="_self" class="list-vertical__link">Persona (Flickr)</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://randomuser.me/" target="_self" class="list-vertical__link">Random User Generator</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://sneakpeekit.com/" target="_self" class="list-vertical__link">Sketch Sheets for Webdesingers</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://ctamagazine.unbounce.com/" target="_self" class="list-vertical__link">Call to Action Magazine</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="collapse js-closed" id="collapse-ebooks">
+<div class="collapse-header">
+<h3 class="collapse-title"><button class="js-collapse-toggle" data-target="collapse-ebooks"><span class="collapse-icon">×</span> eBooks</button></h3>
+</div>
+<div class="collapse-main">
+<ul class="list-vertical">
+<li class="list-vertical__item">
+<a href="https://adaptivewebdesign.info/1st-edition/read/" target="_self" class="list-vertical__link">Adaptive Webdesign</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://eloquentjavascript.net/" target="_self" class="list-vertical__link">eloquent Javascipt</a>
+</li>
+<li class="list-vertical__item">
+<a href="https://resilientwebdesign.com/" target="_self" class="list-vertical__link">resilient webdesign</a>
+</li>
+<li class="list-vertical__item">
+<a href="http://www.thebookoflife.org/" target="_self" class="list-vertical__link">The book of life</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="backdrop js-overlay-toggle" data-target="bookmarks"></div>
+</div>
+
+<div id="assets/qr-codes/github-project.png" class="modal js-hidden">
+<div class="modal-overlay">
+<div class="modal-header">
+Fork me on github <button class="modal-header__close js-modal-toggle" data-target="assets/qr-codes/github-project.png">×</button>
+</div>
+<div class="modal-content modal-content--qr">
+<img src="Browser%20Startpage_files/github-project.png" alt="Fork me on github">
+</div>
+</div>
+<div class="backdrop js-modal-toggle" data-target="assets/qr-codes/github-project.png"></div>
+</div>
+<div id="linksasmodal" class="modal js-hidden">
+<div class="modal-overlay">
+<div class="modal-header">
+Links as modal <button class="modal-header__close js-modal-toggle" data-target="linksasmodal">×</button>
+</div>
+<div class="modal-content">
+<ul class="modal-list">
+<li class="modal-list__item">
+<a href="https://www.google.de/chrome/browser/desktop/" target="_self" class="modal-list__link">Chrome</a>
+</li>
+<li class="modal-list__item">
+<a href="https://www.mozilla.org/firefox" target="_self" class="modal-list__link">Firefox</a>
+</li>
+<li class="modal-list__item">
+<a href="https://www.mozilla.org/de/firefox/developer/" target="_self" class="modal-list__link">Firefox (Dev)</a>
+</li>
+<li class="modal-list__item">
+<a href="https://developer.apple.com/safari/technology-preview/" target="_self" class="modal-list__link">Safari (TP)</a>
+</li>
+<li class="modal-list__item">
+<a href="https://vivaldi.com/" target="_self" class="modal-list__link">Vivaldi</a>
+</li>
+<li class="modal-list__item">
+<a href="https://blisk.io/" target="_self" class="modal-list__link">Blisk</a>
+</li>
+<li class="modal-list__item">
+<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/" target="_self" class="modal-list__link">Modern IE</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="backdrop js-modal-toggle" data-target="linksasmodal"></div>
+</div>
+<div id="assets/qr-codes/metafolio-de.png" class="modal js-hidden">
+<div class="modal-overlay">
+<div class="modal-header">
+About me <button class="modal-header__close js-modal-toggle" data-target="assets/qr-codes/metafolio-de.png">×</button>
+</div>
+<div class="modal-content modal-content--qr">
+<img src="Browser%20Startpage_files/metafolio-de.png" alt="About me">
+</div>
+</div>
+<div class="backdrop js-modal-toggle" data-target="assets/qr-codes/metafolio-de.png"></div>
+</div>
+<div id="assets/qr-codes/metaideen-de.png" class="modal js-hidden">
+<div class="modal-overlay">
+<div class="modal-header">
+Blog (german) <button class="modal-header__close js-modal-toggle" data-target="assets/qr-codes/metaideen-de.png">×</button>
+</div>
+<div class="modal-content modal-content--qr">
+<img src="Browser%20Startpage_files/metaideen-de.png" alt="Blog (german)">
+</div>
+</div>
+<div class="backdrop js-modal-toggle" data-target="assets/qr-codes/metaideen-de.png"></div>
+</div>
+<div id="assets/qr-codes/personalnews-landing.png" class="modal js-hidden">
+<div class="modal-overlay">
+<div class="modal-header">
+personalNews <button class="modal-header__close js-modal-toggle" data-target="assets/qr-codes/personalnews-landing.png">×</button>
+</div>
+<div class="modal-content modal-content--qr">
+<img src="Browser%20Startpage_files/personalnews-landing.png" alt="personalNews">
+</div>
+</div>
+<div class="backdrop js-modal-toggle" data-target="assets/qr-codes/personalnews-landing.png"></div>
+</div>
+<div id="assets/qr-codes/startpage-demo.png" class="modal js-hidden">
+<div class="modal-overlay">
+<div class="modal-header">
+Browser Startpage (this) <button class="modal-header__close js-modal-toggle" data-target="assets/qr-codes/startpage-demo.png">×</button>
+</div>
+<div class="modal-content modal-content--qr">
+<img src="Browser%20Startpage_files/startpage-demo.png" alt="Browser Startpage (this)">
+</div>
+</div>
+<div class="backdrop js-modal-toggle" data-target="assets/qr-codes/startpage-demo.png"></div>
+</div>
+
+<footer id="application-footer" class="js-sticky">
+<div class="description"><a href="https://github.com/saschadiercks/browserStartpage" target="_self">Fork me on Github</a></div>
+<div class="social-profiles">
+<ul class="list-horizontal">
+<li><a href="https://saschadiercks.de/" target="_self">home</a></li>
+<li><a href="https://github.com/saschadiercks" target="_self">github</a></li>
+<li><a href="https://m.twitter.com/saschadiercks" target="_self">twitter</a></li>
+</ul>
+</div>
+</footer>
+<div id="notification" class="notification js-hidden">
+press [alt] to open a tab and prevent remembering it
+</div>
+<div id="wallpaper" style="background-image:url('assets/wallpaper/default.svg')"></div>
+
+<script>
+		document.addEventListener("DOMContentLoaded",function(){function e(e,t){e.classList.add(t)}function t(e,t){e.classList.remove(t)}function n(e,t){window.scrollTo(e,t)}function o(t,n,o){var i=document.getElementById(n),s=document.getElementById(t),a=s.clientHeight+"px";e(s,"js-sticky"),i.style.setProperty(o,a)}function s(e){var t=document.getElementsByClassName(e);for(i=0;i<t.length;i++)t[i].onclick=function(e){a(this.getAttribute("data-target"),e)}}function a(n,o){var i=document.getElementById(n),s=document.getElementsByTagName("body")[0];i.classList.contains("js-visible")?(e(i,"js-hidden"),t(i,"js-visible"),t(s,"js-fx")):(t(i,"js-hidden"),e(i,"js-visible"),e(s,"js-fx")),c("content"),o.preventDefault()}function l(n,o){var i=document.getElementById(n);i.classList.contains("js-opened")?(e(i,"js-closed"),t(i,"js-opened")):(t(i,"js-closed"),e(i,"js-opened")),o.preventDefault()}function c(o){elementToFix=document.getElementById(o),scrollY=window.pageYOffset,elementToFix.classList.contains("js-fixed")?(t(elementToFix,"js-fixed"),elementToFix.style.top="",n(0,scrollYMem)):(e(elementToFix,"js-fixed"),elementToFix.style.top="-"+scrollY+"px",scrollYMem=scrollY),console.log(scrollYMem)}function d(){o("application-header","content","padding-top"),o("application-footer","content","padding-bottom")}document.addEventListener("keydown",function(){var n=document.getElementById("notification");e(n,"js-visible"),t(n,"js-hidden")}),document.addEventListener("keyup",function(){var n=document.getElementById("notification");e(n,"js-hidden"),t(n,"js-visible")}),updateLocalStorageOnTabSwitch=!0;var g=document.getElementsByClassName("js-tab-trigger"),r=document.getElementsByClassName("tabbed-content");g.length!==r.length&&console.log("count of tabs and tabbed-contend isn't consistent");var m=function(e){markTabTrigger=document.getElementsByClassName("js-tab-trigger")[e].classList.add("active"),unhideSelectedContent=document.getElementsByClassName("tabbed-content")[e].classList.add("active"),!1===updateLocalStorageOnTabSwitch?console.log("localStorage not updated"):(localStorage.setItem("tabbedContentId",e),console.log("localStorage ID is: "+e))},u=function(){for(i=0;i<r.length;i++)t(g[i],"active"),t(r[i],"active")},f=localStorage.getItem("tabbedContentId");for(null!==f&&g.length>=f?m(f):(console.log("localStorage is empty or stored Id is no longer present - setting default"),m(0)),i=0;i<g.length;i++)!function(e){g[i].onclick=function(t){return!0===t.altKey?updateLocalStorageOnTabSwitch=!1:updateLocalStorageOnTabSwitch=!0,u(),m(e,updateLocalStorageOnTabSwitch),!1}}(i);!function(){e(document.getElementsByTagName("body")[0],"js")}(),d(),window.onresize=d,function(e){var t=document.getElementsByClassName(e);for(i=0;i<t.length;i++)t[i].onclick=function(e){l(this.getAttribute("data-target"),e)}}("js-collapse-toggle"),s("js-overlay-toggle"),s("js-modal-toggle")});	</script>
+
+
+</body></html>
