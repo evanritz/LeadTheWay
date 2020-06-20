@@ -18,7 +18,7 @@ public class smssender {
 	{
 		System.out.printf(" LTW SERVER: SENDING ALERT TO ADMIN... \n");
 		String full_msg = "LTW SERVICE - CLIENT: " + client + " MSG: " + msg;
-		Message message = Message.creator(new PhoneNumber("+14132376470"), new PhoneNumber("+14138873298"), full_msg).create();
+		Message message = Message.creator(new PhoneNumber("+1234567890"), new PhoneNumber("+123456789"), full_msg).create();
 		System.out.printf(" \t -> Message sent! OUTPUT: %s \n", full_msg);
 	}
 	
