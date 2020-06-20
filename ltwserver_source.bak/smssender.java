@@ -6,8 +6,8 @@ import com.twilio.type.PhoneNumber;
 
 public class smssender {
 
-	private static final String ACCOUNT_ID = "ACfef82b91852adc9f89eaa698665bbfe7";
-	private static final String AUTH_TOKEN = "7d1e81970ed24a9c1ab4f7cc6e87b76d";
+	private static final String ACCOUNT_ID = "";
+	private static final String AUTH_TOKEN = "";
 	
 	public smssender()
 	{
